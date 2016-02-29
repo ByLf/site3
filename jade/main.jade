@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+html(lang="ru")
+    include head
+        block title
+    body
+        include header1
+        include header2
+        .header_nav
+            include nav
+        .wrap
+            aside.left_block
+                include left_block
+            .content
+                block content
+            include info
+        include footer

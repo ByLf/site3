@@ -1,0 +1,188 @@
+.content__sort{
+    border-radius: 5px;
+    height: 53px;
+    font-family: "OpenSans Regular";
+    font-size: 14px;
+    color: #81898f;
+}
+.content__cost{
+    float: left;
+    &:before{
+        content: "Сортировать по";
+        display: inline-block;
+    }
+}
+.content__cost_input
+.content__catalog{
+    float: right;
+}
+$view:'icon_list', 'icon', 'list';
+                @each $button in $view
+                    .view_list__#{button} {
+                        height: 100%;
+                        width: 53px;
+                        border-left: 1px solid rgb( 222, 225, 228);
+                        &:hover{ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2); }
+                    }
+
+.content__list{
+    height: 50px;
+    &:hover{
+        background-color: rgb(251, 251, 251);
+        box-shadow: 0px 1px 4.45px 0.55px rgba(155, 155, 155, 0.75);
+    }
+}
+.content__list_article{
+    font-family: "OpenSans Bold";
+    color: #7f7f7f;
+    font-size: 12px;
+    span{
+        font-family: "OpenSans Semibold";
+        color: #333;
+        font-size: 14px;
+    }
+}
+.content__list_main{
+    display: inline-block;
+    width: 370px;
+}
+.content__list_name{
+    float: left;
+    font-family: "OpenSans Regular";
+    font-size: 14px;
+}
+.content__list_cost{
+    float: right;
+    font-family: "OpenSans Semibold";
+    font-size: 18px;
+    &:after{
+        display: inline;
+        content: "P";
+        margin-left: 5px;
+    }
+}
+
+.content__icon_list{
+    height: 250px;
+    padding: 20px 15px;
+    &:hover{
+        background-color: rgb(251, 251, 251);
+        box-shadow: 0px 1px 4.45px 0.55px rgba(155, 155, 155, 0.75);
+    }
+}
+.content__icon_list_information{
+    width: 430px;
+    height: 190px;
+    padding: 12px 35px 30px 15px;
+    border-right: 1px solid rgb(222, 225, 228);
+}
+.content__icon_list_definition{
+    font-family: 'OpenSans';
+    font-size: 14px;
+}
+.content__icon_list_product{
+    height: 210px;
+}
+
+.content__icon{
+    display: inline-block;
+    width: 235px;
+    height: 510px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 20px 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgb(222, 225, 228);
+    &:hover {
+        box-shadow: 0px 1px 7.2px 0.8px rgba(153, 153, 153, 0.75);
+    }
+    text-align: center;
+}
+.content__icon_table{
+    height: 210px;
+    li{
+        display: block;
+        height: 26px;
+        &:nth-child(odd){ background-color: #fbfbfb; }
+        &:nth-child(even){ background-color: #e6e6e6; }
+    }
+    text-align: justify;
+    span{
+        font-family: "OpenSans Regular";
+        font-size: 14px;
+    }
+}
+//Блок с картинками.
+.content__block_image{
+    height: 200px;
+    width: 160px;
+    margin: 0 auto;
+}
+.content__block_image_main{
+    display: block;
+    margin: 0 auto;
+    height: 140px;
+    max-width: 160px;
+    img{ height: 100%}
+    border: 1px solid rgb(222, 225, 228);
+    border-radius: 2px;
+    background-color: white;
+}
+.content__block_image_review_list{
+    width: 100%;
+    height: 60px;
+    padding: 15px 0px;
+    margin: 0 15px;
+    overflow: hidden;
+}
+.content__block_image_review{
+    height: 34px;
+    img{ height: 100%}
+    margin-right: 20px;
+    border: 1px solid rgb(222, 225, 228);
+    border-radius: 2px;
+    background-color: white;
+}
+.content__block_image_review_active{
+    height: 34px;
+    img{ height: 100%}
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid #f60;
+    border-radius: 2px;
+}
+
+.content__numder_of_rewiev {
+    display: inline-block;
+    border-radius: 7px;
+    background-color: rgb(181, 190, 202);
+    height: 15px;
+    padding: 0 10px;
+    font-family: "OpenSans Semibold";
+    font-size: 12px;
+    color: white;
+}
+
+.content__availability_yes{
+    content: "В наличии";
+    font-family: "OpenSans Bold";
+    font-size: 12px;
+    color: #7f7f7f;
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 8px;
+        background-color: #60ac49;
+    }
+}
+.content__button_basket{
+    content: "В корзину";
+    background-color: #f60;
+    font-family: "OpenSans Bold";
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}

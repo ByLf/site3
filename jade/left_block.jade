@@ -1,0 +1,38 @@
+.left_block__div_chooseMobile
+    .left_block__div_radio Флагманы
+    .left_block__div_radio_activ Бюджетная линейка
+
+.left_block__sort
+    .left_block__sort_shop
+        h3.left_block__sort_h Наличие в магазинах
+        label.sort_shop__input
+            input(type= "radio")
+            .radio__fake_input Во всех магазинах
+        label.sort_shop__input
+            input(type= "radio")
+            .radio__fake_input В ближайшем ко мне магазине
+    .left_block__sort_brands
+        h3.left_block__sort_h Бренды
+        -  var brands = ['Lenovo', 'Apple', 'Samsung', 'Asus', 'Motorola'];
+        each brand in brands
+            label.sort__checkbox
+                input(type= "checkbox")
+                .checkbox__fake_input= brand
+        .left_block__sort_reset Сбросить фильтр
+    .left_block__sort_cost(action="")
+        h3.left_block__sort_h Цена
+        input.left_block__sort_costBegin(type="text",value= '100')
+        input.left_block__sort_costEnd(type="text", value= '13000')
+    .left_block__sort_color(action="")
+        h3.left_block__sort_h Цвет
+        - var colors = ['white', 'grey', 'black', 'blue', 'red', 'yellow', 'orange', 'green', 'azure', 'purple', 'pink', 'brown'];
+        each color in colors
+            .left_block__sort_color_#{color}
+    .left_block__sort_OS
+        h3.left_block__sort_h Операционные системы
+        - var OSs = ['Android', 'iOS', 'Windows Mobile', 'Symbian', 'Custom']
+        each OS in OSs
+            label.sort__checkbox
+                input(type= "checkbox")
+                .checkbox__fake_input=OS
+        .left_block__sort_reset Сбросить фильтр

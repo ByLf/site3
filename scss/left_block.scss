@@ -1,0 +1,84 @@
+.left_block__div_chooseMobile{
+    border-radius: 3px;
+    overflow: hidden;
+    border: thin solid #ebedef;
+    vertical-align: middle;
+    font-family: "OpenSans Regular";
+    font-size: 14px;
+}
+.left_block__div_radio{
+    background-color: #fbfbfb;
+    padding-left: 30px;
+    color: #7f7f7f;
+    height: 45px;
+}
+.left_block__div_radio_activ{
+    background-color: #d9e5ea;
+    padding-left: 30px;
+    color: #5d656c;
+    height: 45px;
+}
+
+.left_block__sort{
+    border-radius: 3px;
+    overflow: hidden;
+    border: thin solid #ebedef;
+    background-color: #fbfbfb;
+}
+.left_block__sort_h{
+    font-family: "OpenSans Semibold";
+    font-size: 16px;
+    text-decoration: underline;
+}
+.radio__fake_input{
+    font-family: 'OpenSans Regular';
+    font-size: 14px;
+}
+.sort__checkbox
+.checkbox__fake_input{
+    font-family: 'OpenSans Regular';
+    font-size: 14px;
+}
+.left_block__sort_shop{
+
+    padding-left: 30px;
+    border-bottom: thin solid #ebedef;
+}
+.sort_shop__input
+.left_block__sort_reset{
+    color: #5db2fc;
+    font-family: "OpenSans Regular";
+    font-size: 14px;
+}
+.left_block__sort_cost{
+
+    padding-left: 30px;
+    border-bottom: thin solid #ebedef;
+}
+.left_block__sort_costBegin{
+
+}
+.left_block__sort_costEnd{
+
+}
+.left_block__sort_color{
+
+    padding-left: 30px;
+    border-bottom: thin solid #ebedef;
+}
+.left_block__sort_OS{
+
+    padding-left: 30px;
+    border-bottom: thin solid #ebedef;
+}
+$colors = 'white': white, 'grey': #ccc, 'black': black, 'blue': #0a3153, 'red': red, 'yellow': #fff343, 'orange': #fb914a, 'green': #92c37c, 'azure': #40a6ff, 'purple': #9870ad, 'pink': #dc78ad, 'brown': #7f401d;
+@each $color, $value in $colors
+    .left_block__sort_color_#{$color} {
+        background-color: $value;
+        width: 37px;
+        height: 37px;
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 20px;
+        border: thin solid #dee1e4;
+    }

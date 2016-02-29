@@ -1,0 +1,29 @@
+.header1{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-bottom: thin solid #ebedef;
+}
+.header1__wrap{
+    margin: 0 auto;
+    width: 1100px;
+}
+.header1__soc_net{
+    float: left;
+    width: 110px;
+    li{ background-color: black;}
+}
+.header1__contacts{
+    float: right;
+}
+.header1__contacts_map{
+    display: inline-block;
+    margin-right: 85px;
+    font-family: 'OpenSans Regular';
+    font-size: 14px;
+}
+.header1__contacts_tel{
+    display: inline-block;
+    font-family: 'OpenSans Semibold';
+    font-size: 18px;
+}

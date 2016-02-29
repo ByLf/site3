@@ -1,0 +1,6 @@
+- var social_net = ['fb':'#', 'vk':'#', 'tw':'#'];
+ul.soc_net {
+    each name, href in social_net
+        li
+            a(href= href)
+                #{name}

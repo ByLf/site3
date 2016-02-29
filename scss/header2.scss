@@ -1,0 +1,53 @@
+.header2{
+    width: 100%;
+    height: 96px;
+    background-color: #f4f4f4;
+    border-bottom: thin solid #ebedef;
+}
+.header2_wrap{
+    width: 1100px;
+    margin: 0 auto;
+}
+.header2__logo{
+    display: inline-block;
+    margin-right: 58px;
+}
+.header2__form_search{
+    width: 370px;
+    margin-right: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.header2__input_search{
+    display: inline-block;
+    width: 290px;
+    font-family: "OpenSans Light";
+    font-size: 14px;
+}
+.header2__button_search{
+    display: inline-block;
+    border: none;
+    width: 80px;
+    font-family: "OpenSans Semibold";
+    font-size: 16px;
+    color: white;
+    background-color: #ff6e35;
+}
+.header2__div_link{
+    text-align: justify;
+    text-decoration: underline;
+    font-size: 16px;
+}
+.header2__a_map{
+    color: #ff6e35;
+    &:hover{
+        text-shadow: 0 1 1em #ff6e35;
+    }
+}
+.header2__a_history,
+.header2__a_basket {
+    color: black;
+    &:hover{
+        text-shadow: 0 1 1em black;
+    }
+}

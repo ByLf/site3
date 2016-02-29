@@ -1,0 +1,13 @@
+extends main
+block title
+    -var title
+    title= title
+block content
+    .content__sort
+        label.content__cost
+            input(type="text").content__cost_input
+        .content__catalog
+            | Вид каталога
+            - var view= ['icon_list', 'icon', 'list'];
+                each button in view
+                    .content__catalog_#{button}

@@ -1,0 +1,21 @@
+.soc_net{
+    display: inline-block;
+    li{
+        height: 23,63%;
+        width: 23,63%;
+        margin-left: 13,63%;
+        border-radius: 50%;
+        overflow: hidden;
+        text-indent: 70px;
+        &:first-child {
+             margin-left: 0;
+        }
+     }
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: 40px;
+    }
+}
+// в шапке 110 26

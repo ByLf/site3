@@ -1,0 +1,6 @@
+- var linksNavigation= {'Планшеты':'#','Мобильные телефоны':'index.html','Мр3 плееры':'#','Персональные компьютеры':'#','Ноутбуки':'#','Аксессуары':'#','Бытовая техника':'#'};
+ul.nav_list
+    each name, href in linksNavigation
+        li
+            a(href= href).nav__a
+                #{name}
